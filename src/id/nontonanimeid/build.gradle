@@ -1,13 +1,12 @@
 ext {
     extName = 'Nonton Anime ID'
+    pkgNameSuffix = 'nontonanimeid'
     extClass = '.NontonAnimeID'
-    themePkg = 'zorotheme'
-    baseUrl = 'https://s11.nontonanimeid.boats'
-    overrideVersionCode = 1
+    extVersionCode = 1
 }
 
 apply from: "$rootDir/common.gradle"
 
 dependencies {
-    api(project(":lib:rapidcloudextractor"))
+    implementation(project(":lib:anime-extractor"))
 }
